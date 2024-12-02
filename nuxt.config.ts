@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
-    'nuxt-directus'
+    'nuxt-directus',
+    'nuxt-lucide-icons'
   ],
   image: {
     //options

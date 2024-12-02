@@ -1,6 +1,10 @@
 <template>
-  <div>
+  <div  class="min-h-screen bg-white">
     <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <Navbar />
+    <HeroSection />
+    <Projects />
   </div>
 </template>
+<script setup>
+</script>
