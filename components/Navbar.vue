@@ -7,7 +7,7 @@
             <div class="space-x-8">
                 <NuxtLink to="#projects" class="text-gray-600 hover:text-orange-400 transition-colors">Results</NuxtLink>
                 <NuxtLink to="#services" class="text-gray-600 hover:text-orange-400 transition-colors">Services</NuxtLink>
-                <NuxtLink to="#contact" class="bg-orange-400 text-white px-4 py-4 rounded-lg hover:bg-orange-500 transition-colors">Get Qhote</NuxtLink>
+                <NuxtLink to="#contact" class="bg-orange-400 text-white px-4 py-2 rounded-lg hover:bg-orange-500 transition-colors">Get Qhote</NuxtLink>
             </div>
         </div>
     </nav>
