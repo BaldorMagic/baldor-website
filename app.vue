@@ -6,6 +6,7 @@
     <Projects />
     <Services />
     <NuxtPage />
+    <Contact />
     <Footer />
   </div>
 </template>
