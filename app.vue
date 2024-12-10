@@ -5,7 +5,6 @@
     <HeroSection />
     <Projects />
     <Services />
-    <NuxtPage />
     <Contact />
     <Footer />
   </div>

@@ -8,7 +8,7 @@
                 <div v-for="(project, index) in projects" :key="index"
                     class="group bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100"
                     @mouseenter="setActiveProject(index)" @mouseleave="setActiveProject(null)">
-                    <div :class="[`mb-4 bg-gradient-to-br bg-[${project.color}] rounded-xl p-4 w-fit`]">
+                    <div :class="[`mb-4 bg-gradient-to-br ${project.color} rounded-xl p-4 w-fit`]">
                         <component :is="project.icon" />
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-gray-700">{{ project.title }}</h3>
