@@ -2,6 +2,7 @@
   <div class="min-h-screen bg-white">
     <Navbar />
     <HeroSection />
+    <NuxtPage />
     <Projects />
     <Services />
     <Contact />

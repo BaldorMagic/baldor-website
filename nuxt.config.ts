@@ -29,6 +29,7 @@ export default defineNuxtConfig({
     //options
   },
   directus: {
+    url: "https://localhost:8055",
     devtools: true
   },
 
