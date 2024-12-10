@@ -17,8 +17,19 @@ export default defineNuxtConfig({
     'nuxt-lucide-icons'
   ],
 
+  runtimeConfig: {    
+    public: {      
+      directus: {        
+        url: process.env.DIRECTUS_URL
+      }    
+    }  
+  },
+
   image: {
     //options
+  },
+  directus: {
+    devtools: true
   },
 
   compatibilityDate: '2024-12-10'
