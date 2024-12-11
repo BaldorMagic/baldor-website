@@ -3,8 +3,8 @@
     <Navbar />
     <HeroSection />
     <NuxtPage />
-    <Projects />
-    <Services />
+    <!--<Projects />
+    <Services />-->
     <Contact />
     <Footer />
   </div>

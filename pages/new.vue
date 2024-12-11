@@ -1,5 +1,5 @@
 <template>
-    <button class="p-4 text-gray-700" @click="createItems">Create items</button>
+    <button class="p-4 text-gray-700" @click="handleCreateItems">Create items</button>
 </template>
 <script setup lang="ts">
 const { createItems } = useDirectusItems();
@@ -22,9 +22,13 @@ const newProjects: Project[] = [
     { title: "App", description: "To see", metrics: ["95% Sales Increase", "$5,000 Monthly Revenue"], tags: ["20%", "90% More Visibility"], url: "#", gradient_from: "from-teal-300", gradient_to: "to-orange-500", icon: "Globe", icon_color: "text-teal-400" }
 ];
 
-await createItems<Project>({
+console.log(newProjects);
+
+const handleCreateItems = async () => {
+    await createItems<Project>({
         collection: "projects",
         items: newProjects
     });
+}
 
 </script>

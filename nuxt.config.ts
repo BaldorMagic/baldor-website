@@ -28,10 +28,6 @@ export default defineNuxtConfig({
   image: {
     //options
   },
-  directus: {
-    url: "https://localhost:8055",
-    devtools: true
-  },
-
+  
   compatibilityDate: '2024-12-10'
 })
