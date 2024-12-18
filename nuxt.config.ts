@@ -2,6 +2,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  dev: true,
+
+  debug: true,
+
   sourcemap: {
     server: true,
     client: true
@@ -17,12 +21,8 @@ export default defineNuxtConfig({
     'nuxt-lucide-icons'
   ],
 
-  runtimeConfig: {    
-    public: {      
       directus: {        
         url: process.env.DIRECTUS_URL
-      }    
-    }  
   },
 
   image: {

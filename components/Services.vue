@@ -19,15 +19,20 @@
         </div>
     </section>
 </template>
-<script setup>
-const { $directus, $readItems } = useNuxtApp();
+<script setup lang="ts">
+    const { getItems } = useDirectusItems();
 
-const { data: services } = await useAsyncData('services', () => {
-    return $directus.request(
-        $readItems('services', {
-            fields: ['title', 'description', 'price', 'icon', 'background_color']
-        })
-    )
-})
+interface Services {
+    id: number;
+    title: string;
+    description: string;
+    price: string;
+    icon: string;
+    icon_color: string;
+    bg_color: string;
+}
 
+const services = await getItems<Services>({
+    collection: "services"
+});
 </script>
