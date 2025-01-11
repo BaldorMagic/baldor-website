@@ -20,6 +20,9 @@ export default defineNuxtConfig({
     'nuxt-directus',
     'nuxt-lucide-icons'
   ],
+  lucide: {
+    prefix: "Lucide"
+  },
 
       directus: {        
         url: process.env.DIRECTUS_URL

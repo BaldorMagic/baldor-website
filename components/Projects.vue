@@ -8,8 +8,8 @@
                 <div v-for="(project, index) in projects" :key="index"
                     class="group bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100"
                     @mouseenter="setActiveProject(index)" @mouseleave="setActiveProject(null)">
-                    <div :class="`mb-4 bg-gradient-to-br ${project.colorClass} rounded-xl p-4 w-fit`">
-                        <Icon :name="project.icon" class="w-8 h-8" :class="project.icon_color" />
+                    <div :class="`bg-gradient-to-b from-teal-50 to-white-4 bg-gradient-to-br ${project.color} rounded-xl p-4 w-fit`">
+                        <component :is="project.icon" class="w-8 h-8" :class="project.icon_color" />
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-gray-700">{{ project.title }}</h3>
                     <p class="text-gray-600 mb-4 text-sm">{{ project.description }}</p>
@@ -36,9 +36,17 @@
     </section>
 </template>
 <script setup lang="ts">
+import { computed } from 'vue';
+import * as icons from "lucide-vue-next";
+
+const props = defineProps({
+
+})
+
 const { getItems } = useDirectusItems();
 
 interface Projects {
+    
     id: number;
     title: string;
     description: string;
